@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>eLearning1 - Count On Me </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/jquery.3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="js/saw.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="count_on_me_wrap">
+        <h2>H-E-B Counts on Me: Basket Pushouts July 2022</h2>
+
+        <div id="frame1" class="frames active">
+          <div class="choose_lang_wrap">
+            <div class="lang_overlay"></div>
+            <div class="lcenter">
+              <h3>Please choose your language / Por favor, selections su idioma</h3>
+              <div class="lang_btns">
+                <a href="javascript:void(0);" class="lbtns eng_btn">English</a>
+                <a href="javascript:void(0);" class="lbtns spanish_btn">Espanol</a>
+              </div>
+            </div>
+          </div>
+          <div class="video_player eng_version">
+            <video-js id="english_video" data-video-id="6052176062001" data-account="1160327042001"
+                      data-player="S1X17dLSW" data-embed="default" data-application-id class="video-js" controls
+                      width="100%" height="100%"></video-js>
+          </div>
+          <div class="video_player spanish_version">
+            <video-js id="spanish_video" data-video-id="6052173272001" data-account="1160327042001"
+                      data-player="S1X17dLSW" data-embed="default" data-application-id class="video-js" controls
+                      width="100%" height="100%"></video-js>
+          </div>
+          <div class="com_logo width100">
+            <div class="com-logo-img ">
+              <img src="images/heb-counts-on-me-logo.png" alt="HEB Count on Me Logo" />
+            </div>
+            <div class="btns_next_logo eng_ver">
+              <a href="javascript:void(0);" class="next_btn"><span>Next</span></a>
+            </div>
+            <div class="btns_next_logo span_ver">
+              <a href="javascript:void(0);" class="next_btn"><span>Siguiente</span></a>
+            </div>
+          </div>
+        </div>
+        <div id="frame2" class="frames">
+          <div class="questions_frame eng_qs_wrap">
+            <form method="POST" action="">
+              <div id="equestion1" class="question_wrap active">
+                <div class="white_wrap">
+                  <div class="qstn_wrap">
+                    <span class="question">What is the best way for Partners to “Spot the Fakes?” </span>
+                    <div class="ans_option">
+                      <div class="ans_span">
+                        <label>
+                          <input type="radio" name="qstn1" value="0">
+                          <span class="label_text">Always check inside coolers and other items Customers are
+                            purchasing</span>
+                        </label>
+                      </div>
+                      <div class="ans_span">
+                        <label>
+                          <input type="radio" name="qstn1" value="0">
+                          <span class="label_text">Always check B.O.B (<strong>B</strong>ottom <strong>O</strong>f
+                            <strong>B</strong>asket)</span>
+                        </label>
+                      </div>
+                      <div class="ans_span">
+                        <label>
+                          <input type="radio" name="qstn1" value="0">
+                          <span class="label_text">Always move large items in shopping carts to ensure nothing is hidden
+                            underneath
+                          </span>
+                        </label>
+                      </div>
+                      <div class="ans_span">
+                        <label>
+                          <input type="radio" name="qstn1" value="1">
+                          <span class="label_text">All of the above</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="equestion2" class="question_wrap ">
+                <div class="white_wrap">
+                  <div class="qstn_wrap">
+                    <span class="question">What is Pushout Theft? </span>
+                    <div class="ans_option">
+                      <div class="ans_span">
+                        <label>
+                          <input type="radio" name="qstn2" value="0">
+                          <span class="label_text">When shoplifters push managers who try to stop them from
+                            stealing</span>
+                        </label>
+                      </div>
+                      <div class="ans_span">
+                        <label>
+                          <input type="radio" name="qstn2" value="1">
+                          <span class="label_text">When a shoplifter pushes out a basket of unpaid merchandise</span>
+                        </label>
+                      </div>
+                      <div class="ans_span">
+                        <label>
+                          <input type="radio" name="qstn2" value="0">
+                          <span class="label_text">When a shoplifter runs out the door</span>
+                        </label>
+                      </div>
+                      <div class="ans_span">
+                        <label>
+                          <input type="radio" name="qstn2" value="0">
+                          <span class="label_text">None of the Above</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="equestion3" class="question_wrap ">
+                <div class="white_wrap">
+                  <div class="qstn_wrap">
+                    <span class="question">Staying alert and paying attention to what’s in-side shopping carts reduces
+                      loss: True or False? </span>
+                    <div class="ans_option">
+                      <div class="ans_span">
+                        <label>
+                          <input type="radio" name="qstn3" value="1">
+                          <span class="label_text">True</span>
+                        </label>
+                      </div>
+                      <div class="ans_span">
+                        <label>
+                          <input type="radio" name="qstn3" value="0">
+                          <span class="label_text">False</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="equestion4" class="question_wrap ">
+                <div class="white_wrap">
+                  <div class="qstn_wrap">
+                    <span class="question">Which of the following behaviors might be con-sidered suspicious? </span>
+                    <div class="ans_option">
+                      <div class="ans_span">
+                        <label>
+                          <input type="radio" name="qstn4" value="0">
+                          <span class="label_text">A shopping cart lined with bags of dog food, with a weekly ad
+                            covering the middle of the cart</span>
+                        </label>
+                      </div>
+                      <div class="ans_span">
+                        <label>
+                          <input type="radio" name="qstn4" value="0">
+                          <span class="label_text">An entire shopping cart full of Tide detergent</span>
+                        </label>
+                      </div>
+                      <div class="ans_span">
+                        <label>
+                          <input type="radio" name="qstn4" value="0">
+                          <span class="label_text">A Customer who spends more time watching Partners than looking for
+                            merchandise</span>
+                        </label>
+                      </div>
+                      <div class="ans_span">
+                        <label>
+                          <input type="radio" name="qstn4" value="1">
+                          <span class="label_text">All of the Above</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="equestion5" class="question_wrap ">
+                <div class="white_wrap">
+                  <div class="qstn_wrap">
+                    <span class="question">When is it permissible for a Partner to touch a shoplifter? </span>
+                    <div class="ans_option">
+                      <div class="ans_span">
+                        <label>
+                          <input type="radio" name="qstn5" value="1">
+                          <span class="label_text">Never</span>
+                        </label>
+                      </div>
+                      <div class="ans_span">
+                        <label>
+                          <input type="radio" name="qstn5" value="0">
+                          <span class="label_text">If shoplift attempts to leave before the Police arrive</span>
+                        </label>
+                      </div>
+                      <div class="ans_span">
+                        <label>
+                          <input type="radio" name="qstn5" value="0">
+                          <span class="label_text">When merchandise is concealed in their clothing </span>
+                        </label>
+                      </div>
+                      <div class="ans_span">
+                        <label>
+                          <input type="radio" name="qstn5" value="0">
+                          <span class="label_text">When a shoplifter looks like they are about to run</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="com_logo">
+
+              </div>
+              <div class="btn-wrap">
+                <input type="button" name="submit" class="en-submit-btn" value="SUBMIT/ENVIAR">
+              </div>
+            </form>
+          </div>
+          <div class="questions_frame sp_qs_wrap">
+            <form method="POST" action="">
+              <div id="squestion1" class="question_wrap active">
+                <div class="white_wrap">
+                  <div class="qstn_wrap">
+                    <span class="question">¿Cuál es la mejor manera para que los Socios “Detecten los Falsos?” </span>
+                    <div class="ans_option">
+                      <div class="ans_span">
+                        <label>
+                          <input type="radio" name="qstn1" value="0">
+                          <span class="label_text">Siempre revisar adentro de hieleras y otros productos que los
+                            Clientes están comprando</span>
+                        </label>
+                      </div>
+                      <div class="ans_span">
+                        <label>
+                          <input type="radio" name="qstn1" value="0">
+                          <span class="label_text">Siempre checar B.O.B (<strong>B</strong>ottom <strong>O</strong>f
+                            <strong>B</strong>asket)</span>
+                        </label>
+                      </div>
+                      <div class="ans_span">
+                        <label>
+                          <input type="radio" name="qstn1" value="0">
+                          <span class="label_text">Siempre mover productos grandes en carri-tos de compra, para
+                            asegurarse que nada este escondido debajo
+                          </span>
+                        </label>
+                      </div>
+                      <div class="ans_span">
+                        <label>
+                          <input type="radio" name="qstn1" value="1">
+                          <span class="label_text">Todas las respuestas</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="squestion2" class="question_wrap ">
+                <div class="white_wrap">
+                  <div class="qstn_wrap">
+                    <span class="question">¿Qué es Robo por Carrito?</span>
+                    <div class="ans_option">
+                      <div class="ans_span">
+                        <label>
+                          <input type="radio" name="qstn2" value="0">
+                          <span class="label_text">Cuando ladrones empujan a los gerentes que traten de evitar el
+                            robo</span>
+                        </label>
+                      </div>
+                      <div class="ans_span">
+                        <label>
+                          <input type="radio" name="qstn2" value="1">
+                          <span class="label_text">Cuando un lardón saca el carrito de compra con mercancía no
+                            pagada</span>
+                        </label>
+                      </div>
+                      <div class="ans_span">
+                        <label>
+                          <input type="radio" name="qstn2" value="0">
+                          <span class="label_text">Cuando un ladrón sale corriendo por la puerta</span>
+                        </label>
+                      </div>
+                      <div class="ans_span">
+                        <label>
+                          <input type="radio" name="qstn2" value="0">
+                          <span class="label_text">Ninguna de los anteriores</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="squestion3" class="question_wrap ">
+                <div class="white_wrap">
+                  <div class="qstn_wrap">
+                    <span class="question">Estar alerta y poner atención a lo que hay adentro de los carritos de compra
+                      reduce la perdida: ¿Verdadero o Falso? </span>
+                    <div class="ans_option">
+                      <div class="ans_span">
+                        <label>
+                          <input type="radio" name="qstn3" value="1">
+                          <span class="label_text">Verdadero</span>
+                        </label>
+                      </div>
+                      <div class="ans_span">
+                        <label>
+                          <input type="radio" name="qstn3" value="0">
+                          <span class="label_text">Falso</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="squestion4" class="question_wrap ">
+                <div class="white_wrap">
+                  <div class="qstn_wrap">
+                    <span class="question">¿Cuál de los siguientes comportamientos pudieran ser considerados
+                      sospechosos? </span>
+                    <div class="ans_option">
+                      <div class="ans_span">
+                        <label>
+                          <input type="radio" name="qstn4" value="0">
+                          <span class="label_text">Un carrito de compra con comida para perro alineadas, con un boletín
+                            semanal cubriendo el centro del carritos</span>
+                        </label>
+                      </div>
+                      <div class="ans_span">
+                        <label>
+                          <input type="radio" name="qstn4" value="0">
+                          <span class="label_text">Un carrito de compra lleno de detergente Tide </span>
+                        </label>
+                      </div>
+                      <div class="ans_span">
+                        <label>
+                          <input type="radio" name="qstn4" value="0">
+                          <span class="label_text">Un Cliente que pasa más tiempo observando Socios que buscando
+                            mercancía</span>
+                        </label>
+                      </div>
+                      <div class="ans_span">
+                        <label>
+                          <input type="radio" name="qstn4" value="1">
+                          <span class="label_text">Todas las respuestas</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="squestion5" class="question_wrap ">
+                <div class="white_wrap">
+                  <div class="qstn_wrap">
+                    <span class="question">¿Cuándo le es permitido a un Socio tocar a un ladrón? </span>
+                    <div class="ans_option">
+                      <div class="ans_span">
+                        <label>
+                          <input type="radio" name="qstn5" value="1">
+                          <span class="label_text">Nunca</span>
+                        </label>
+                      </div>
+                      <div class="ans_span">
+                        <label>
+                          <input type="radio" name="qstn5" value="0">
+                          <span class="label_text">Si el ladrón intenta irse antes de que llegue la Policía</span>
+                        </label>
+                      </div>
+                      <div class="ans_span">
+                        <label>
+                          <input type="radio" name="qstn5" value="0">
+                          <span class="label_text">Cuando la mercancía esta oculta en su ropa </span>
+                        </label>
+                      </div>
+                      <div class="ans_span">
+                        <label>
+                          <input type="radio" name="qstn5" value="0">
+                          <span class="label_text">Cuando parezca que el ladrón va a huir</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="com_logo">
+
+              </div>
+              <div class="btn-wrap">
+                <input type="button" name="submit" class="sp-submit-btn" value="SUBMIT/ENVIAR">
+              </div>
+            </form>
+          </div>
+        </div>
+        <div id="frame3" class="frames">
+          <div class="thankyou_wrap ethanku_wrap">
+            <div class="thanks_text">
+              Thanks for your time, Partner!
+            </div>
+            <div class="t_msg_wrap">
+              <div class="t_msg">
+                Talk with your Manager if you have any questions about this material.
+              </div>
+              <div class="exit_course_btn">
+                <a href="javascript:void(0);" class="exit-btn">Exit Course</a>
+              </div>
+            </div>
+          </div>
+          <div class="thankyou_wrap sthanku_wrap">
+            <div class="thanks_text">
+              ¡Gracias por su tiempo, Socios!
+            </div>
+            <div class="t_msg_wrap">
+              <div class="t_msg">
+                Hablen con su instructor o Training Lead si tienen alguna pregunta sobre este material.
+              </div>
+              <div class="exit_course_btn">
+                <a href="javascript:void(0);" class="exit-btn">Salir del curso</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="invalid_ans_popup" class="popwrap">
+      <div class="popcontent">
+        <div class="modal">
+          <span class="modal_heading">Invalid Answer</span>
+          <div class="modal_content">
+            You must complete the section before submitting
+          </div>
+          <div class="modal-btns">
+            <a href="javascript:void(0);" class="btn ok-btn close-popup">OK</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="en_correct_ans_popup" class="popwrap">
+      <div class="popcontent">
+        <div class="modal">
+          <span class="modal_heading">Correct</span>
+          <div class="modal_content">
+            That's right! You selected the correct response.
+          </div>
+          <div class="modal-btns">
+            <a href="javascript:void(0);" class="btn ok-btn continue-popup">Continue</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="sp_correct_ans_popup" class="popwrap">
+      <div class="popcontent">
+        <div class="modal">
+          <span class="modal_heading">Correcto</span>
+          <div class="modal_content">
+            ¡Está bien! Ha seleccionado la respuesta correcta.
+          </div>
+          <div class="modal-btns">
+            <a href="javascript:void(0);" class="btn ok-btn continue-popup">Continuar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="en_incorrect_ans_popup" class="popwrap">
+      <div class="popcontent">
+        <div class="modal">
+          <span class="modal_heading">Incorrect</span>
+          <div class="modal_content">
+            That is incorrect. Please try again.
+          </div>
+          <div class="modal-btns">
+            <a href="javascript:void(0);" class="btn ok-btn close-popup">Try Again</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sp_incorrect_ans_popup" class="popwrap">
+      <div class="popcontent">
+        <div class="modal">
+          <span class="modal_heading">Incorrecto</span>
+          <div class="modal_content">
+            Eso es incorrecto. Por favor, inténtalo de nuevo.
+          </div>
+          <div class="modal-btns">
+            <a href="javascript:void(0);" class="btn ok-btn close-popup">Inténtalo de nuevo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://players.brightcove.net/1160327042001/S1X17dLSW_default/index.min.js"></script>
+
+  </body>
+
+</html>
