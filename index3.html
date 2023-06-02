@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/MatchingCSS.css">
     <script src="js/jquery.3.4.1.min.js"></script>
 
     <script type="text/javascript" src="js/custom.js"></script>
@@ -163,35 +164,13 @@
               <div id="equestion4" class="question_wrap ">
                 <div class="white_wrap">
                   <div class="qstn_wrap">
-                    <span class="question">Which of the following behaviors might be con-sidered suspicious? </span>
-                    <div class="ans_option">
-                      <div class="ans_span">
-                        <label>
-                          <input type="radio" name="qstn4" value="0">
-                          <span class="label_text">A shopping cart lined with bags of dog food, with a weekly ad
-                            covering the middle of the cart</span>
-                        </label>
-                      </div>
-                      <div class="ans_span">
-                        <label>
-                          <input type="radio" name="qstn4" value="0">
-                          <span class="label_text">An entire shopping cart full of Tide detergent</span>
-                        </label>
-                      </div>
-                      <div class="ans_span">
-                        <label>
-                          <input type="radio" name="qstn4" value="0">
-                          <span class="label_text">A Customer who spends more time watching Partners than looking for
-                            merchandise</span>
-                        </label>
-                      </div>
-                      <div class="ans_span">
-                        <label>
-                          <input type="radio" name="qstn4" value="1">
-                          <span class="label_text">All of the Above</span>
-                        </label>
-                      </div>
-                    </div>
+                    <section>
+                      <ul id="terms">
+                      </ul>
+                      <ul id="defs">
+                      </ul>
+                      <button name="reset">RESET</button>
+                    </section>
                   </div>
                 </div>
               </div>
@@ -510,5 +489,6 @@
 
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
   <script src="./js/pdf1.js"></script>
+  <script src="./js/MatchingUtil.js"></script>
 
 </html>
