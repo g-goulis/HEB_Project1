@@ -86,14 +86,27 @@ $(document).ready(function(){
   });
 
   $(".en-submit-btn").click(function(){
-    var wrapid = $(".eng_qs_wrap .question_wrap.active").attr("id");
-    var radioValue = $(".eng_qs_wrap .question_wrap.active").find("input[type=radio]:checked").val();
+    let wrapid = $(".eng_qs_wrap .question_wrap.active").attr("id");
+    let radioValue = $(".eng_qs_wrap .question_wrap.active").find("input[type=radio]:checked").val();
+    let checkValue = $(".eng_qs_wrap .question_wrap.active").find("input[type=checkbox]:checked").length > 0 ? true : false
+    $(".eng_qs_wrap .question_wrap.active").find("input[type=checkbox]").each(
+        function() {
+            if(($(this).val() == 1 && $(this).prop("checked") == false) || ($(this).val() == 0 && $(this).prop("checked") == true)) {
+                checkValue = false;
+                // Break early
+                return false;
+            }
+        }
+    );
+    let freeValue = $("#qstn5").val();
+
+    console.log(freeValue + " FREE VAL ")
     
-        if(!radioValue){
+        if(!radioValue && !freeValue && !checkValue){
             $("#invalid_ans_popup").show();
         } else {
           // Correct answer
-          if (radioValue == 1) {
+          if (radioValue == 1 || freeValue === "HEB" || checkValue) {
               // Last question
             if (wrapid == "equestion5") {
                $(this).parents(".frames").removeClass("active");
@@ -131,8 +144,8 @@ $(document).ready(function(){
 
 
   $(".sp-submit-btn").click(function(){
-    var wrapid = $(".sp_qs_wrap .question_wrap.active").attr("id");
-    var radioValue = $(".sp_qs_wrap .question_wrap.active").find("input[type=radio]:checked").val();
+    let wrapid = $(".sp_qs_wrap .question_wrap.active").attr("id");
+    let radioValue = $(".sp_qs_wrap .question_wrap.active").find("input[type=radio]:checked").val();
     
         if(!radioValue){
             $("#invalid_ans_popup").show();
@@ -157,7 +170,7 @@ $(document).ready(function(){
   $("#en_correct_ans_popup .continue-popup").click(function(){
 
     if ($(".question_wrap.active")[0]) {
-      var wrapactive = $(".question_wrap.active");
+      let wrapactive = $(".question_wrap.active");
       $("#en_correct_ans_popup").hide();
         $(wrapactive).removeClass("active");
         $(wrapactive).next(".question_wrap").addClass("active");
@@ -171,7 +184,7 @@ $(document).ready(function(){
   $("#sp_correct_ans_popup .continue-popup").click(function(){
 
     if ($(".question_wrap.active")[0]) {
-      var wrapactive = $(".question_wrap.active");
+      let wrapactive = $(".question_wrap.active");
       $("#sp_correct_ans_popup").hide();
         $(wrapactive).removeClass("active");
         $(wrapactive).next(".question_wrap").addClass("active");
